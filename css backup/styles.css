@@ -1,0 +1,366 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"BARGILE";
+    src: url(../font/BARGILE.otf);
+}
+@font-face {
+    font-family:"AZTEC";
+    src: url(../font/AZTEC.ttf);
+}
+.nombreLogo{
+    font-family: AZTEC;
+    color: rgb(23, 23, 24);
+}
+
+.text-content{
+    font-family: BARGILE;
+    color: rgb(23, 23, 24);
+    background-color: rgb(217, 228, 230);
+    width: 100%;
+}
+
+header{
+    margin-top: 100px;
+}
+.videoInicio{
+    width: 1335px;
+    height: 650px; ;
+}
+
+.bordeRedondo{
+    border-radius: 30px;
+}
+.imgChica{
+    width: 200;
+    height: 300px;
+    margin: 8px;
+}
+.imgMediana{
+    width: 350px;
+    height: 550px;
+}
+.imgGrande{
+    width: 700px;
+    height: 600px;
+}
+/*barra de navegación*/
+nav.navegacion{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(73, 99, 105);
+    align-items: center; justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center; gap: 10px;
+    width: 100px;
+    height: 80px;
+    cursor: pointer; 
+}
+nav {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+nav ul {
+    width: 960px;
+    margin: auto;
+    padding: 0;
+    float: right;
+}
+nav ul li {
+    line-height: 35px;
+    display: inline-block;
+    padding-right: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+body{
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+}
+/*menu mobile */
+#check_menu, .navegacion__nav label {
+    display:none;
+}
+/*pseudoclases*/
+.nav_item:hover{
+    background-color: #344446;
+    border-radius: 4px;
+}
+.nav_item:active{
+    background-color: #242e30;
+    border-radius: 4px; 
+}
+.nav_item:active a{
+   color: #4990d3;
+}
+
+
+/*header*/
+.productos{
+    background-color: rgb(140, 173, 163);
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+    margin: 10px;
+    border: 5 solid rgb(43, 61, 63);
+    padding: 100px;
+}
+.contenedorPadreIndex1{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    height: 600px;
+    background-color: rgb(179, 204, 196);
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.contenedorHijo{
+    font-weight: 600;
+    height: 320px;
+    width: 215px;
+    background-color: rgb(16, 28, 87);
+    margin: 10px;
+    border-radius: 5px 5px 0 0 ;
+
+}
+.contenedorHijo:hover{
+    background-color: #155ea3;
+}
+.contenedorHijo:hover .img{
+    opacity: 1;
+}
+
+
+.destinos{
+    width: 100%;
+    padding: 1rem 4%;
+    height: 100%;
+    margin: 10;
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
+
+}
+
+/* Footer */
+footer {
+    background-color: #13444d;
+}
+
+section.pie_pagina {
+    padding: 1rem 7%;
+    background-color: #181818;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: #fffefe;
+
+}
+
+.pie_pagina h2 {
+    font-size: 1.4rem;
+}
+
+.pie_pagina .links h2 img {
+    margin: 0 2px;
+    width: 0.95rem;
+
+}
+
+.pie_pagina ul, .pie_pagina form {
+    padding: 10px 0;
+    width: 250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pie_pagina form {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pie_pagina form input, .pie_pagina form button.boton {
+    padding: 2px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.pie_pagina form button.boton.boton_news {
+    align-self: end;
+    background-color: #b5c022;
+
+    padding: 2px 5px;
+    color: #fdfdfd;
+}
+
+
+.pie_pagina .contacto ul {
+    height: 100px;
+
+}
+
+.pie_pagina ul .link_item a {
+    color: #fdfdfd;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.link_item a i.bx {
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
+
+.credits {
+    border-top: 2px solid #f5f5f4;
+    padding: 1rem 7%;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.credits .container__logo {
+    width: 20px;
+    height: 100%;
+    transition: width .85s ease;
+    overflow: hidden;
+}
+
+.credits .container__logo:hover {
+    width: 100px;
+}
+
+.credits .container__logo img {
+    height: 22px;
+}
+
+.credits span {
+    color: #f5f5f4;
+}
+.navegacion__nav {
+    text-decoration: none;
+    color: #ced4d3;
+    font-weight: bold;
+}
+.follow {
+    text-decoration: none;
+    color: #ced4d3;
+    font-weight: bold;
+}
+.newsletter {
+    text-decoration: none;
+    color: #ced4d3;
+    font-weight: bold;
+}
+/*Media cueries*/
+@media (max-width:1280px ){
+    .navegacion__nav label{
+        width: 70%;
+    }
+}
+
+@media (max-width:768px ){
+    .navegacion__nav label{
+        display: block;
+    }
+    .navegacion__nav{
+        display: none;
+    }
+
+    #check_menu:checked~.navegacion__nav{
+        background-color: #b3b686;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+}
+@media (max-width:420px){
+    .contenedorPadreIndex1{
+        width: 100%;
+        height: 0;
+    }
+}
+/* Opiniones */
+.opiniones__container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+}
+
+.opiniones__card {
+    width: 360px;
+}
+
+.opiniones__bubble {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ebebeb;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+
+}
+
+.opiniones__stars {
+    padding: .3rem 0;
+    color: #03ce1b;
+}
+/*Pseudoclases*/
+.opiniones__card p:last-child{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+
+/* Form Contacto */
+.contacto__container .form_container {
+    position: inherit;
+    /* background-color: transparent; */
+}
+
+.contacto__container .form__control textarea {
+    outline: none;
+    padding: 3px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+
