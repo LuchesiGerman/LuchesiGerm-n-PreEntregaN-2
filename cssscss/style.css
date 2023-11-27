@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100v;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, sans-serif;
+}
+
+@font-face {
+  font-family: "BARGILE";
+  src: url(../font/BARGILE.otf);
+}
+@font-face {
+  font-family: "AZTEC";
+  src: url(../font/AZTEC.ttf);
+}
+.nombreLogo {
+  font-family: AZTEC;
+  color: rgb(23, 23, 24);
+}
+
+.text-content {
+  font-family: BARGILE;
+  color: rgb(23, 23, 24);
+  background-color: rgb(217, 228, 230);
+  width: 100%;
+}
+
+header {
+  margin-top: 100px;
+}
+
+.videoInicio {
+  width: 1335px;
+  height: 650px;
+}
+
+.bordeRedondo {
+  border-radius: 30px;
+}
+
+.imgChica {
+  width: 200;
+  height: 300px;
+  margin: 8px;
+}
+
+.imgMediana {
+  width: 350px;
+  height: 550px;
+}
+
+.imgGrande {
+  width: 700px;
+  height: 600px;
+}
+
+nav.navegacion {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(73, 99, 105);
+  align-items: center;
+  justify-content: space-between;
+}
+nav.navegacion .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+}
+
+nav {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav .ul {
+  width: 960px;
+  margin: auto;
+  padding: 0;
+  float: right;
+}
+nav .ul .li {
+  line-height: 35px;
+  display: inline-block;
+  padding-right: 50px;
+}
+nav .ul .li .a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+nav .ul .li .a .hover {
+  text-decoration: underline;
+}
+
+/*pseudoclases*/
+.nav_item:hover {
+  background-color: #344446;
+  border-radius: 4px;
+}
+.nav_item:hover .active {
+  background-color: #242e30;
+  border-radius: 4px;
+}
+.nav_item:hover .active .a {
+  color: #4990d3;
+}
+
+/*Media cueries*/
+@media (max-width: 1280px) {
+  .navegacion__nav label {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .navegacion__nav label {
+    display: block;
+  }
+  .navegacion__nav {
+    display: none;
+  }
+  #check_menu:checked ~ .navegacion__nav {
+    background-color: #b3b686;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+@media (max-width: 420px) {
+  .contenedorPadreIndex1 {
+    width: 100%;
+    height: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

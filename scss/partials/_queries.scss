@@ -1,0 +1,34 @@
+/*Media cueries*/
+@media (max-width:1280px ){
+    .navegacion__nav label{
+        width: 70%;
+    }
+}
+
+@media (max-width:768px ){
+    .navegacion__nav label{
+        display: block;
+    }
+    .navegacion__nav{
+        display: none;
+    }
+
+    #check_menu:checked~.navegacion__nav{
+        background-color: #b3b686;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+}
+@media (max-width:420px){
+    .contenedorPadreIndex1{
+        width: 100%;
+        height: 0;
+    }
+}
