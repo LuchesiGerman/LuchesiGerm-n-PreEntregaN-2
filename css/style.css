@@ -69,7 +69,7 @@ nav.navegacion {
   display: flex;
   height: 80px;
   width: 100%;
-  background-color: rgb(70, 113, 122);
+  background-color: rgb(73, 99, 105);
   align-items: center;
   justify-content: space-between;
 }
@@ -107,6 +107,30 @@ nav .ul .li .a {
 }
 nav .ul .li .a .hover {
   text-decoration: underline;
+}
+
+.contenedorPadreIndex1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 600px;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  background-image: linear-gradient(rgb(81, 201, 163), rgb(214, 231, 226));
+}
+.contenedorPadreIndex1 .contenedorHijo {
+  font-weight: 600;
+  height: 320px;
+  width: 215px;
+  margin: 10px;
+  border-radius: 5px 5px 0 0;
+  background-image: linear-gradient(rgb(138, 179, 166), rgb(214, 231, 226));
+  background-position: top;
+}
+.contenedorPadreIndex1 .contenedorHijo:hover {
+  background-position: unset;
 }
 
 /*pseudoclases*/
