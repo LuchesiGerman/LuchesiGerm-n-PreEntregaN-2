@@ -1,0 +1,39 @@
+.contenedorPadreIndex1{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    background-image: linear-gradient(rgb(81, 201, 163),rgb(214, 231, 226)) ;
+}
+.contenedorHijo{
+    font-weight: 600;
+    height: 320px;
+    width: 215px;
+    margin: 10px;
+    border-radius: 5px 5px 0 0 ;
+    background-image: linear-gradient(rgb(138, 179, 166),rgb(214, 231, 226)) ;
+}
+footer {
+    background-image: linear-gradient(#081416,#125766);
+}
+nav.navegacion{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(73, 99, 105);
+    align-items: center; justify-content: space-between;
+    background-image: linear-gradient(rgb(73, 99, 105),rgb(88, 105, 109));
+    background-position: left;
+    
+}
+.productos{
+
+    background-image: linear-gradient(to right, #4e8573, #5b9288, #6a9f9b, #7cacae, #90b9bf, #93b9bf, #95b9bf, #98b9bf, #8aadaf, #7da09e, #72948e, #68877d);
+}
+#check_menu:checked~.navegacion__nav{
+    background-image: linear-gradient(to right, #a49251, #aa9d57, #afa85e, #b4b365, #b9be6d, #babf6d, #babf6e, #bbc06e, #b8b667, #b4ac61, #b0a35b, #ac9955);
+}
