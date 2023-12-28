@@ -95,7 +95,7 @@ body{
     font-family:Georgia, 'Times New Roman', Times, sans-serif;
 }
 /*menu mobile */
-#check_menu, .navegacion__nav label {
+#check_menu, .navegacion label {
     display:none;
 }
 /*pseudoclases*/
@@ -286,8 +286,8 @@ section.pie_pagina {
     }
 }
 
-@media (max-width:768px ){
-    .navegacion__nav label{
+@media (max-width:768px){
+    .navegacion label{
         display: block;
     }
     .navegacion__nav{
@@ -306,11 +306,18 @@ section.pie_pagina {
         justify-content: start;
         align-items: start;
     }
+    .destinos{
+        grid-template-columns: 1fr;
+    }
 }
 @media (max-width:420px){
     .contenedorPadreIndex1{
         width: 100%;
         height: 0;
+    }
+    .imgGrande{
+        width: 450px;
+    height: 300px;
     }
 }
 /* Opiniones */

@@ -156,7 +156,7 @@ nav .ul .li .a .hover {
   .navegacion__nav label {
     display: block;
   }
-  .navegacion__nav {
+  .navegacion__nav label{
     display: none;
   }
   #check_menu:checked ~ .navegacion__nav {
@@ -178,5 +178,4 @@ nav .ul .li .a .hover {
     height: 0;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
