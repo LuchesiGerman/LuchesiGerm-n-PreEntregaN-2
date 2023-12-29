@@ -116,11 +116,12 @@ body{
 .productos{
     background-color: rgb(140, 173, 163);
     width: 100%;
-    height: 500px;
-    overflow: scroll;
+    height: 80%px;
+    overflow-x: scroll;
     margin: 10px;
     border: 5 solid rgb(43, 61, 63);
-    padding: 100px;
+    padding: 80px;
+    align-items: center;
 }
 .contenedorPadreIndex1{
     display: flex;
@@ -319,6 +320,10 @@ section.pie_pagina {
         width: 450px;
     height: 300px;
     }
+.productos{
+    grid-template-columns: 1fr;
+    
+}
 }
 /* Opiniones */
 .opiniones__container {
